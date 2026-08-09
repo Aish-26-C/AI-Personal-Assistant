@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Personal Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/frontend/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND GLOW
+    ========================================== -->
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+    <div class="background-glow glow-three"></div>
+
+
+    <!-- =========================================
+         MAIN APPLICATION
+    ========================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
+        <header class="chat-header">
+
+            <div class="brand-section">
+
+                <div class="ai-logo">
+                    🤖
+                </div>
+
+
+                <div class="brand-text">
+
+                    <h1>
+                        AI Personal Assistant
+                    </h1>
+
+
+                    <div class="status">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            Online • Powered by Groq
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="clearButton"
+                class="clear-button"
+            >
+                🧹 Clear
+            </button>
+
+        </header>
+
+
+
+        <!-- =====================================
+             CHAT AREA
+        ====================================== -->
+
+        <main
+            id="chatMessages"
+            class="chat-messages"
+        >
+
+
+            <!-- Welcome -->
+
+            <div class="welcome-section">
+
+                <div class="welcome-icon">
+                    ✨
+                </div>
+
+
+                <h2>
+                    Hello! I'm your AI Assistant
+                </h2>
+
+
+                <p>
+                    Ask me anything, explain a concept,
+                    plan a task, or just start a conversation.
+                </p>
+
+            </div>
+
+
+
+            <!-- Initial AI Message -->
+
+            <div class="message-row ai-row">
+
+
+                <div class="avatar ai-avatar">
+                    🤖
+                </div>
+
+
+                <div class="message-wrapper">
+
+                    <div class="message-name">
+                        AI Assistant
+                    </div>
+
+
+                    <div class="message ai-message">
+
+                        Hello! 👋
+
+                        <br><br>
+
+                        I'm ready to help you.
+                        What would you like to know?
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 QUICK SUGGESTIONS
+            ================================== -->
+
+            <div class="suggestions">
+
+
+                <button
+                    class="suggestion"
+                    data-message="Explain Python in simple words"
+                >
+                    💡 Explain Python
+                </button>
+
+
+                <button
+                    class="suggestion"
+                    data-message="Help me create a study plan"
+                >
+                    📚 Help me study
+                </button>
+
+
+                <button
+                    class="suggestion"
+                    data-message="Create a plan for my project"
+                >
+                    📝 Create a plan
+                </button>
+
+
+                <button
+                    class="suggestion"
+                    data-message="Give me an innovative project idea"
+                >
+                    🚀 Give me an idea
+                </button>
+
+
+            </div>
+
+
+        </main>
+
+
+
+        <!-- =====================================
+             TYPING INDICATOR
+        ====================================== -->
+
+        <div
+            id="typing"
+            class="typing-indicator"
+        >
+
+
+            <div class="typing-avatar">
+                🤖
+            </div>
+
+
+            <span>
+                AI is thinking
+            </span>
+
+
+            <div class="typing-dots">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             INPUT SECTION
+        ====================================== -->
+
+        <footer class="input-section">
+
+
+            <div class="input-container">
+
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Ask your AI assistant anything..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="sendButton"
+                    class="send-button"
+                    aria-label="Send message"
+                >
+                    ➤
+                </button>
+
+
+            </div>
+
+
+
+            <div class="input-footer">
+
+                <span>
+                    AI can make mistakes. Verify important information.
+                </span>
+
+
+                <span class="shortcut">
+                    Press Enter ↵ to send
+                </span>
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
+    <script src="/frontend/script.js"></script>
+
+</body>
+
+</html>
